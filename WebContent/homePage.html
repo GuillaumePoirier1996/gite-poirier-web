@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Gîte Poirier</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="Gîte Poirier icon" href="../assets/img/Logo Gîte Poirier.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <!-- Titre -->
+      <div class="title">
+        <h1>Gîte Poirier</h1>
+        <h2>Marignac - France</h2>
+      </div>
+
+      <!-- Menu de navigation du site -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#activities">Activités</a></li>
+          <li><a href="#reservation">Réservation</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Description -->
+    <div class="desc">
+      <img
+        alt="Présentation du gîte"
+        src="../assets/img/vue ext gite comp.jpg"
+      />
+      <p1>
+        Envie de decouvrir la magnifique région qu'est la Charente Maritime, de
+        télétravailler dans un environnement calme ou simplement de vous
+        installer dans un endroit retiré, cette maison individuelle est faite
+        pour vous.
+      </p1>
+
+      <p2>
+        Sur les hauteurs d'un petit village, ce bien récent de 73 m² est de
+        plein pied, dispose d'un parking privé, d'une terrasse et d'un jardin
+        clos. Le caractère fonctionnel de ce logement permet un accès aux
+        personnes à mobilité réduite.
+      </p2>
+
+      <p3>
+        Deux chambres, une belle pièce de vie mélant salon/salle à
+        manger/cuisine aménagée et une salle de bains spacieuse vous attendent.
+      </p3>
+
+      <div class="icons">
+        <span class="material-symbols-rounded"> wifi </span>
+        <span class="material-symbols-rounded"> hiking </span>
+        <span class="material-symbols-rounded"> accessible </span>
+        <span class="material-symbols-rounded"> outdoor_garden </span>
+        <span class="material-symbols-rounded"> countertops </span>
+        <span class="material-symbols-rounded"> local_laundry_service </span>
+        <span class="material-symbols-rounded"> local_parking </span>
+        <span class="material-symbols-rounded"> bathtub </span>
+        <span class="material-symbols-rounded"> table_restaurant </span>
+        <span class="material-symbols-rounded"> tv </span>
+        <span class="material-symbols-rounded"> water </span>
+        <span class="material-symbols-rounded"> bed </span>
+        <span class="material-symbols-rounded"> bedroom_child </span>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="portfolio">
+      <p id="portfolio">Vous avez été redirigé vers Portfolio.</p>
+      <img
+        id="pres1"
+        alt="Vue exterieure"
+        src="../assets/img/vue vigne ext comp.jpeg"
+      />
+      <img
+        id="pres2"
+        alt="Chambre enfant"
+        src="../assets/img/chambre bleue.jpg"
+      />
+      <img id="pres3" alt="entrée 1" src="../assets/img/P1010846.JPG" />
+      <img id="pres4" alt="entrée 2" src="../assets/img/P1010847.JPG" />
+
+      <script>
+        // Wrap every .img in a div
+        // 1. For all items with class .img...
+        // 2. Wrap them in a div
+        $(".portfolio img").wrap('<div class="alt-wrap"/>');
+
+        // Add alt text after each .img
+        // 1. For all items with class .img...
+        // 2. Run a function for each of them...
+        // 3. To add a p element after it
+        // 5. Containing that element's alt text
+        $(".portfolio img").each(function () {
+          $(this).after('<p class="alt">' + $(this).attr("alt") + "</p>");
+        });
+      </script>
+    </div>
+
+    <!-- Activités -->
+    <div class="activities">
+      <p id="activities">Vous avez été redirigé vers Activités.</p>
+    </div>
+
+    <!-- Réservation -->
+    <div class="reservation">
+      <p id="reservation">Vous avez été redirigé vers Réservation.</p>
+    </div>
+
+    <!-- Logo -->
+    <img alt="Gîte Poirier" src="../assets/img/Logo Gîte Poirier.png" />
+
+    <!-- Accès WIFI. Sans animaux. Location draps sur demande et
+		matériel bébé prêté. Week-ends possibles hors haute saison.
+		METTRE DES ICONS POUR INDIQUER TOUT PLUS SIMPLEMENT -->
+
+    <p4
+      >A proximité des sentiers de randonnées. 8 kms de Jonzac (Thermes centre
+      aquatique les Antilles et Casino) et de Pons (cité médiévale, donjon). A
+      40 mn plages, 50 mn Bordeaux et La Rochelle.
+    </p4>
+
+    <div class="jeux">
+      <img id="ball" src="../assets/img/ball.png" alt="ballon" />
+      <script src="../script.js"></script>
+    </div>
+
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      th {
+        border: 1px solid black;
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+      }
+    </style>
+
+    <h3>Calendrier</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Lundi</th>
+          <th>Mardi</th>
+          <th>Mercredi</th>
+          <th>Jeudi</th>
+          <th>Vendredi</th>
+          <th>Samedi</th>
+          <th>Dimanche</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+    </table>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+      gapi.load("client", function () {
+        gapi.client
+          .init({
+            apiKey: "YOUR_API_KEY",
+            discoveryDocs: [
+              "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
+            ],
+          })
+          .then(function () {
+            var today = new Date();
+            var start = new Date(today.getFullYear(), today.getMonth(), 1);
+            var end = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+            var request = gapi.client.calendar.events.list({
+              calendarId: "primary",
+              timeMin: start.toISOString(),
+              timeMax: end.toISOString(),
+              showDeleted: false,
+              singleEvents: true,
+              orderBy: "startTime",
+            });
+            request.execute(function (resp) {
+              var events = resp.items;
+              var table = document.getElementById("calendar-body");
+              var row = table.insertRow(-1);
+              var cellIndex = 0;
+              for (var i = 1 - start.getDay(); i <= end.getDate(); i++) {
+                var cell = row.insertCell(cellIndex);
+                cell.innerHTML = i > 0 ? i : "";
+                cellIndex++;
+                if (cellIndex === 7) {
+                  row = table.insertRow(-1);
+                  cellIndex = 0;
+                }
+              }
+              for (var j = 0; j < events.length; j++) {
+                var event = events[j];
+                var date = new Date(event.start.dateTime);
+                var cell = table.rows[date.getDate()].cells[date.getDay()];
+                cell.innerHTML += "<br>" + event.summary;
+              }
+            });
+          });
+      });
+    </script>
+  </body>
+</html>

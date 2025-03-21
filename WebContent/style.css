@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../assets/fonts/Oswald/Oswald-Regular.ttf);
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+/* retrait des propriétés de bases */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.menu {
+  background-image: url("../assets/img/texture2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+h1 {
+  font-size: 4vw;
+  font-size: 4vmin;
+  /*letter-spacing: 0.4vw;*/
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-size: 3vw;
+  font-size: 3vmin;
+  /*letter-spacing: 0.3vw;*/
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 1vw;
+  font-size: 2.5vw;
+  font-size: 4vmin;
+}
+
+.navbar li a {
+  color: rgb(255, 255, 255);
+}
+
+.navbar li a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-underline-offset: 1vw;
+}
+
+.desc {
+  display: grid;
+  border: solid 1px rgb(0, 0, 0);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "pi p1"
+    "pi p2"
+    "pi p3"
+    "pi li";
+}
+
+.desc img {
+  width: 100%;
+  grid-area: pi;
+}
+
+p1,
+p2,
+p3 {
+  font-size: 0.2vw;
+  font-size: 2vmin;
+  text-align: justify;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+p1 {
+  grid-area: p1;
+}
+
+p2 {
+  grid-area: p2;
+}
+
+p3 {
+  grid-area: p3;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: li;
+  font-variation-settings: "FILL" 0, "wght" 700, "GRAD" 0, "opsz" 70;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+/*.material-symbols-rounded {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+*/
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "pi1 pi1 pi1 pi1 pi1 pi1 pi2 pi2 pi2 pi2"
+    "pi1 pi1 pi1 pi1 pi1 pi1 pi2 pi2 pi2 pi2"
+    "pi1 pi1 pi1 pi1 pi1 pi1 pi3 pi3 pi4 pi4";
+}
+
+.portfolio img {
+  width: 100%;
+  /*object-fit: cover;*/
+  border: solid 1px rgb(0, 0, 0);
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/* ----- Style the elements ----- */
+
+/* Wrap the image and alt text */
+/* Will be added with js */
+/*
+.alt-wrap {
+  display: block;
+  position: relative;
+  margin: 20px;
+  color: whitesmoke;
+  border: 1px solid mediumorchid;
+}
+
+/* The alt text itself */
+/* Will be added with js */
+/*
+.alt-wrap p.alt {
+  position: absolute;
+  opacity: 0; /* hide initially */
+/*left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 300ms ease;
+  transition-delay: 300ms;
+}
+
+/* Hovering over the wrapper shows its alt p*/
+/*.alt-wrap:hover > p.alt {
+  opacity: 1;
+  transition-delay: 0s;
+}
+*/
+#pres1 {
+  grid-area: pi1;
+}
+#pres2 {
+  grid-area: pi2;
+}
+#pres3 {
+  grid-area: pi3;
+}
+#pres4 {
+  grid-area: pi4;
+}
+
+.activities {
+}
+
+.reservation {
+}
+
+#ball {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
